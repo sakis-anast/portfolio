@@ -40,7 +40,7 @@ const SocialLinks = () => {
     <div className='hidden lg:flex flex-col top-[30%] left-0 fixed'>
         <ul>
            {links.map((link)=>(
-             <li key={link.id} className={`' flex justify-between items-center w-40 h-14 px-4
+             <li key={link.id} className={`' flex justify-between items-center w-40 h-14 px-4 font-bold
              ml-[-100px] hover:ml-[-10px]  hover:rounded-md duration-300 bg-white ${link.style}' `}>
                  
                   <a href={link.href}  target="_blank" rel="noopener noreferrer"className='flex justify-between items-center w-full text-red-500'> 
