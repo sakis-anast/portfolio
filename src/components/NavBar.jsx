@@ -1,5 +1,6 @@
 import React ,{useState} from 'react'
 import {FaBars , FaTimes} from "react-icons/fa"
+import {Link} from "react-scroll"
 function NavBar() {
 
     const [navigation , setNavigation] =useState(false)
@@ -34,7 +35,8 @@ function NavBar() {
         <ul className='hidden md:flex'>
             {infos.map(info=> (
  <li key={info.id} className='px-4 cursor-pointer font-medium 
-hover:scale-105 hover:text-white duration-200 capitalize'> {info.info} </li>
+hover:scale-105 hover:text-white duration-200 capitalize'> <Link to={info.info} smooth duration={500}>{info.info}</Link>
+ </li>
             ))}
         </ul>
 
@@ -56,7 +58,9 @@ hover:scale-105 hover:text-white duration-200 capitalize'> {info.info} </li>
   absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-slate-950'>
 {infos.map(info=> (
 <li key={info.id} className='py-6 px-4 cursor-pointer text-4xl
-capitalize'> {info.info} </li>
+capitalize'> 
+<Link to={info.info} smooth duration={500} onClick={()=>setNavigation(!navigation)} >{info.info}</Link>
+  </li>
       ))}
   </ul>
 

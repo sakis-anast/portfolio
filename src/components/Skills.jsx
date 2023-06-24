@@ -49,7 +49,7 @@ const Skills = () => {
        
     ]
   return (
-    <div name="skills" className=' w-full bg-gradient-to-b
+    <div name="skills" className=' w-full h-screen bg-gradient-to-b
     from-black to-slate-950'>
         <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center h-full w-full 
         text-red-500' >
@@ -59,7 +59,7 @@ const Skills = () => {
             </div>
             <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8  sm:px-0'>
                 {skills.map((skill)=>(
- <div key={skill.id}className={`shadow-md hover:scale-105 duration-500 sm:py-6  rounded-lg ${skill.style}`}>
+ <div key={skill.id}className={`shadow-md hover:scale-105 duration-500   rounded-lg ${skill.style}`}>
  <img src={skill.src} alt={skill.tittle}  className='w-20 mx-auto'/>
  <p className='mt-4 text-white'> {skill.tittle} </p>
  </div>
