@@ -7,9 +7,9 @@ const Home = () => {
 <div name="home" className='h-screen w-full bg-gradient-to-b
 from-black to-slate-950'>
     <div className='max-w-screen-lg mx-auto flex flex-col
-    items-center justify-center h-full px-4 md:text-center'>
+    items-center justify-center h-full px-4 sm:text-center'>
             <h2 className='text-3xl sm:text-7xl font-bold text-red-500'>Hi, my name is Sakis Anastasopoulos.</h2>
-            <p className='text-red-500 py-4 max-w-screen-sm text-xl'>
+            <p className='text-red-500 py-4 max-w-screen-sm min-[350px]:text-xl'>
             I am a full stack Web Developer with a background in working
 with diverse teams . I enjoy working with full stack applications,
 solving problems, creating useful applications, constantly

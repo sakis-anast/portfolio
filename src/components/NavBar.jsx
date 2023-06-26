@@ -27,7 +27,7 @@ function NavBar() {
         },
     ]
   return (
-    <div className='flex justify-between items-center w-full h-20 text-red-500 fixed bg-black px-4'>
+    <div className='flex justify-between items-center w-full h-20 text-red-500 fixed z-10 bg-black px-4 '>
         <div >
             <h1 className='text-5xl font-signature ml-2'>Sakis</h1>
         </div>

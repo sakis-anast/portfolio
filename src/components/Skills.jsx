@@ -59,7 +59,7 @@ const Skills = () => {
             </div>
             <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8  sm:px-0'>
                 {skills.map((skill)=>(
- <div key={skill.id}className={`shadow-md hover:scale-105 duration-500   rounded-lg ${skill.style}`}>
+ <div key={skill.id}className={`shadow-md md:hover:scale-105 duration-500   rounded-lg ${skill.style}`}>
  <img src={skill.src} alt={skill.tittle}  className='w-20 mx-auto'/>
  <p className='mt-4 text-white'> {skill.tittle} </p>
  </div>
