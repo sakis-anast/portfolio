@@ -2,7 +2,7 @@ import React from 'react'
 import rema from '../assets/rema.PNG'
 import chatty from '../assets/chatty.PNG'
 import openai from '../assets/openai.PNG'
-import calc from '../assets/rema.PNG'
+// import calc from '../assets/rema.PNG'
 import portfolio from '../assets/portfolio.PNG'
 
 const Portfolio = () => {
