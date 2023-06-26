@@ -49,11 +49,11 @@ const Skills = () => {
        
     ]
   return (
-    <div name="skills" className=' w-full h-screen bg-gradient-to-b
+    <div name="skills" className=' w-full bg-gradient-to-b
     from-black to-slate-950'>
         <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center h-full w-full 
         text-red-500' >
-            <div>
+            <div className='pt-20'> 
                 <p className='text-4xl font-bold border-b-4 border-red-500 p-2 inline'>Skills</p>
                 <p className="py-6">Technologies i work with</p>
             </div>
