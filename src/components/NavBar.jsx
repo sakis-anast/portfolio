@@ -35,7 +35,7 @@ function NavBar() {
         <ul className='hidden md:flex'>
             {infos.map(info=> (
  <li key={info.id} className='px-4 cursor-pointer font-medium 
-hover:scale-105 hover:text-white duration-200 capitalize'> <Link to={info.info} smooth duration={500}>{info.info}</Link>
+hover:scale-105 hover:text-white duration-200 capitalize'> <Link activeClass="active" to={info.info} spy smooth duration={500}>{info.info}</Link>
  </li>
             ))}
         </ul>
@@ -59,7 +59,7 @@ hover:scale-105 hover:text-white duration-200 capitalize'> <Link to={info.info} 
 {infos.map(info=> (
 <li key={info.id} className='py-6 px-4 cursor-pointer text-4xl
 capitalize'> 
-<Link to={info.info} smooth duration={500} onClick={()=>setNavigation(!navigation)} >{info.info}</Link>
+<Link activeClass="active" spy to={info.info} smooth duration={500} onClick={()=>setNavigation(!navigation)} >{info.info}</Link>
   </li>
       ))}
   </ul>

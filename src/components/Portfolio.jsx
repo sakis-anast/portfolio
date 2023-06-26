@@ -30,9 +30,9 @@ const Portfolio = () => {
        
     ]
   return (
-    <div name="portfolio" className="bg-gradient-to-b from-black to-slate-950
+    <div id="portfolio" className="bg-gradient-to-b from-black to-slate-950
      text-red-500 ">
-        <div className='max-w-screen-lg  mx-auto flex flex-col min-[320px]:p-4
+        <div className='max-w-screen-lg  mx-auto flex flex-col min-[320px]:p-2
          justify-center w-full h-full'>
             <div className='pb-8 pt-20'>
                 <p className='text-4xl font-bold inline border-b-4 border-red-500'>Portfolio</p>
@@ -43,7 +43,7 @@ const Portfolio = () => {
 
             {projects.map((project)=>(
                 <div key={project.id} className='shadow-md shadow-red-500 rounded-lg scale-90 min-[290px]:scale-100  '>
-                    <img src={project.src} alt='' className='rounded-md duration-200 md:hover:scale-105 '></img>
+                    <img src={project.src} alt='' className='rounded-md duration-200 hover:scale-105 '></img>
                     <div className='flex items-center justify-center'>
                         <button className='w-1/2 px-6 py-3 m-4 hover:scale-105 hover:text-white duration-300'>Demo</button>
                         <button className='w-1/2 px-6 py-3 m-4 hover:scale-105 hover:text-white duration-300'>Code</button>
