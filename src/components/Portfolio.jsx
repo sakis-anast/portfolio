@@ -1,32 +1,37 @@
 import React from 'react'
 import rema from '../assets/rema.PNG'
-// import chatty from '../assets/rema.PNG'
-// import openai from '../assets/rema.PNG'
-// import calc from '../assets/rema.PNG'
+import chatty from '../assets/chatty.PNG'
+import openai from '../assets/openai.PNG'
+import calc from '../assets/rema.PNG'
+import portfolio from '../assets/portfolio.PNG'
 
 const Portfolio = () => {
     const projects=[
         {
             id: 0,
-           src: rema
+           src: rema,
+           href1: "https://metalaxis.net/rema/",
+           href2: "https://github.com/sakis-anast/ReMa",
+
         },
         {
             id: 1,
-           src: rema
+           src: chatty,
+           href1: "https://www.loom.com/share/78841e49f9344ddbba4c0523abc3b4c5",
+           href2: "https://github.com/sakis-anast/chat-application",
         },
         {
             id: 2,
-           src: rema
+           src: openai,
+           href1: "https://www.loom.com/share/074498d15c304dafab77e7264a67beeb",
+           href2: "https://github.com/sakis-anast/Chat-GPT",
         },
         {
-            id: 3,
-           src: rema
-        },
-        {
-            id: 4,
-           src: rema
-        },
-       
+           id: 3,
+           src: portfolio,
+           href1: "https://incredible-pony-000561.netlify.app/",
+           href2: "https://github.com/sakis-anast/portfolio",
+        },   
        
     ]
   return (
@@ -45,8 +50,8 @@ const Portfolio = () => {
                 <div key={project.id} className='shadow-md shadow-red-500 rounded-lg scale-90 min-[290px]:scale-100  '>
                     <img src={project.src} alt='' className='rounded-md duration-200 hover:scale-105 '></img>
                     <div className='flex items-center justify-center'>
-                        <button className='w-1/2 px-6 py-3 m-4 hover:scale-105 hover:text-white duration-300'>Demo</button>
-                        <button className='w-1/2 px-6 py-3 m-4 hover:scale-105 hover:text-white duration-300'>Code</button>
+                        <a href={project.href1}  target="_blank" rel="noopener noreferrer" className='w-1/2  py-3 m-4 hover:scale-105 hover:text-white duration-300'>Demo</a>
+                        <a href={project.href2}  target="_blank" rel="noopener noreferrer" className='w-1/2  py-3 m-4 hover:scale-105 hover:text-white duration-300'>Code</a>
 
                     </div>
                 </div>
